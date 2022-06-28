@@ -19,6 +19,7 @@ export default class Button extends React.Component {
         return(
             <div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"100vh"}}>
                 <button disabled={this.state.checked} onClick={this.handleClick} style={{backgroundColor: this.state.checked ? 'gray':this.state.buttonColor}}>{this.state.buttonText}</button>
+                &nbsp;&nbsp;&nbsp;
                 <input onChange={this.handleCheckBox} checked={this.state.checked} id='disable-button-checkbox' name='checkbox1' type='checkbox'/>
                 <label htmlFor='disable-button-checkbox'>Disable button</label>
             </div>
